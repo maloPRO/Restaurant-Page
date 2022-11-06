@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&family=Roboto+Serif:opsz,wght@8..144,300&family=Rubik+Dirt&family=Silkscreen:wght@700&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&family=Poppins&family=Roboto+Serif:opsz,wght@8..144,300&family=Rubik+Dirt&family=Silkscreen:wght@700&family=Ubuntu&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./images/bg2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+#content {
+  width: 65%;
+  background:#fffada;
+  background-size: cover;
+  display: grid;
+  grid-template: 1fr 0.3fr 6fr 1fr / 1fr 1fr 4fr 1fr 1fr;
+}
+#title {
+  grid-area: 1/1/2/6;
+  color: #333;
+  font-family: 'Poor Story', cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  padding: 10px;
+}
+#title img {
+  width: 30px;
+  height: 30px;
+}
+#title img:hover {
+  transform: rotate(10deg);
+}
+#nav {
+  grid-area: 2/3/3/4;
+  color: #222;
+  display: grid;
+  grid-template: 1fr / repeat(6, 1fr);
+  font-size: 1rem;
+  font-weight: 900;
+}
+.navItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+
+}
+.navItem:hover {
+  cursor: pointer;
+  background-color: #222;
+  color: #fffada;
+}
+#section {
+  width: 100%;
+  height: 100%;
+  grid-area: 3/2/3/5;
+  border-radius: 3px;
+
+}
+#homeTab {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template: repeat(5, 1fr) / 1fr;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./images/bg2.jpg');
+  background-size: cover;
+}
+#slogan {
+  color: #fff;
+  font-family: 'Poor Story', cursive;
+  font-size: 3rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#workingHours {
+  display: grid;
+  grid-template: .5fr .8fr / 1fr 1fr;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.8);
+}
+#hoursTitle {
+  grid-area: 1/1/2/3;
+  display: flex;
+  justify-content: center;
+  color: #fffada;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+.week-days {
+  color: #fffada;
+  display: grid;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+.days, .time {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 5px;
+}
+.days {
+  font-weight: 900;
+}
+#weekdays {
+  border-right: 5px solid #fffada;
+}
+.time {
+  font-family: 'Courier New', Courier, monospace;
+}
+#orderSection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#orderButton , #reserve{
+  background-color: #fffada;
+  color: #222;
+  width: 8rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+#orderButton:hover, #reserve:hover {
+  background-color: rgb(47, 124, 53);
+  color: #fffada;
+  cursor: pointer;
+}
+#adress {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: grid;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+#specialsTab {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template: .5fr 6fr / 1fr;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./images/specials.jpg');
+  background-size: cover;
+}
+#specialsContainer {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 5px;
+}
+.specialsNum {
+  color: #fffada;
+  display: grid;
+  padding: 5px;
+  background-color: rgba(0,0,0,0.5);
+
+}
+.specialsNum p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.specialsNum p:first-child {
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+}
+.specialsNum p:nth-child(2) {
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+}
+.specialsNum p:nth-child(3) {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+}
+
+#lunchTab {
+  width: 100%;
+  height: 100%;
+  background: url('./images/lunch.jpg');
+  background-size: cover;
+  display: grid;
+  grid-template: .5fr 6fr / 1fr;
+}
+#dinnerTab {
+  width: 100%;
+  height: 100%;
+  background: url('./images/dinner2.jpg');
+  background-size: cover;
+  display: grid;
+  grid-template: .5fr 6fr / 1fr;
+}
+#drinksTab {
+  width: 100%;
+  height: 100%;
+  background: url('./images/bar.jpg');
+  background-size: cover;
+  display: grid;
+  grid-template: .5fr 6fr / 1fr;
+}
+#tabSectionHeader{
+  color: #fffada;
+  padding: 10px;
+  grid-area: 1/1/2/2;
+  background: rgba(0,0,0,0.5);
+  margin-bottom: 3px;
+}
+#tabSectionHeader h3, #tabSectionHeader p {
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+#lunchContent, #dinnerContent {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 3px;
+}
+.items {
+  background-color: rgba(0,0,0,0.5);
+}
+.items:hover {
+  transform: scale(0.99);
+}
+.itemTitle {
+  color: #fffada;
+  display: flex;
+  justify-content: center;
+  padding: 5px 5px 0 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+.itemContent {
+  color: #fff;
+  padding:0 10px 0 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: .85rem;
+
+}
+#drinksContent {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 3px;
+}
+.listItem {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: .85rem;
+  text-align: center;
+  padding: 3px;
+}
